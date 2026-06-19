@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="About Page" />
+    <meta name="author" content="Het Mehta" />
+
+    <title>About - {{ params['blog_name'] }}</title>
+
+    <link rel="icon" type="image/x-icon"
+        href="{{ url_for('static', filename='assets/favicon.ico') }}" />
+
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js"
+        crossorigin="anonymous"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic"
+        rel="stylesheet" />
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800"
+        rel="stylesheet" />
+
+    <link href="{{ url_for('static', filename='css/styles.css') }}"
+        rel="stylesheet" />
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
+
+        <div class="container px-4 px-lg-5">
+
+            <a class="navbar-brand" href="{{ url_for('home') }}">
+                {{ params['blog_name'] }}
+            </a>
+
+            <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarResponsive">
+
+                Menu <i class="fas fa-bars"></i>
+
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+
+                <ul class="navbar-nav ms-auto py-4 py-lg-0">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url_for('home') }}">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url_for('about') }}">About</a>
+                    </li>
+
+                  
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url_for('contact') }}">Contact</a>
+                    </li>
+
+                   <li class="nav-item">
+                         <a class="nav-link" href="{{ url_for('dashboard') }}"> Dashboard </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+    <header class="masthead"
+        style='background-image: url("{{ url_for("static", filename="assets/img/about-bg.jpg") }}")'>
+
+        <div class="container position-relative px-4 px-lg-5">
+
+            <div class="row justify-content-center">
+
+                <div class="col-md-10 col-lg-8 col-xl-7">
+
+                    <div class="page-heading">
+
+                        <h1>About Me</h1>
+
+                        <span class="subheading">
+                            This is what I do.
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <main class="mb-4">
+
+        <div class="container px-4 px-lg-5">
+
+            <div class="row justify-content-center">
+
+                <div class="col-md-10 col-lg-8 col-xl-7">
+
+                    <p>
+                        {{ params['about_text'] }}
+                    </p>
+
+                   
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer class="border-top">
+
+        <div class="container px-4 px-lg-5">
+
+            <div class="row justify-content-center">
+
+                <div class="col-md-10 col-lg-8 col-xl-7">
+
+                    <ul class="list-inline text-center">
+
+                        <li class="list-inline-item">
+
+    <a href="{{ params['wa_url'] }}" target="_blank" style="color: #25D366;">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    
+</li>
+
+                       <li class="list-inline-item">
+    <a href="{{ params['insta_url'] }}" target="_blank" style="color: #E1306C;">
+        <i class="fab fa-instagram"></i>
+    </a>
+</li>
+
+                        <li class="list-inline-item">
+                            <a href="{{ params['gh_url'] }}" target="_blank" style="color: #333;">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </li>
+
+                    </ul>
+
+                    <div class="small text-center text-muted fst-italic">
+                        Copyright &copy; Het Mehta 2026
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+
+</body>
+
+</html>

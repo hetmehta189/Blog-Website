@@ -1,0 +1,20 @@
+{
+"params":{
+    "local_server":"True",
+    "local_uri":"mysql+pymysql://root:Hetm189@localhost/codingthunder",
+    "prod_uri":"mysql+pymysql://root:Hetm189@localhost/codingthunder",
+    "insta_url":"https://instagram.com/hetmehta46",
+    "gh_url":"https://github.com/hetmehta189",
+    "wa_url":"https://wa.me/919157138711?text=Hello",
+    "blog_name":"Het Mehta",
+    "tag_line":"A blog by Het Mehta",
+    "gmail_user":"tracknfix7@gmail.com",
+    "gmail_password":"nqteenlhqxgenqyt",
+    "about_text":"This is a blog about programming and technology. I am a software developer and I love to share my knowledge with others. I hope you find my blog useful and informative. Thank you for visiting my blog!",
+    "no_of_posts":2,
+    "admin_user":"Admin",
+    "admin_password":"1234",
+    "upload_location":"C:\\Flask(Tutorial)\\Tutorial 3\\static\\files\\"
+}
+
+}
