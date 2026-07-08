@@ -1,0 +1,18 @@
+{
+  "params": {
+    "blog_name": "My Awesome Blog",
+    "blog_subheading": "A place where I share my thoughts",
+    "about_text": "Hello! I am a passionate blogger sharing insights on technology, development, and more.",
+    "upload_location": "static/files",
+    "gmail_user": "your-email@gmail.com",
+    "gmail_password": "your-gmail-app-password",
+    "local_uri": "mysql+pymysql://root:@localhost/blog_db",
+    "prod_uri": "mysql+pymysql://production_user:password@production_host/blog_db",
+    "no_of_posts": 5,
+    "admin_user": "admin",
+    "admin_password": "secure_admin_password",
+    "wa_url": "https://wa.me/1234567890",
+    "insta_url": "https://instagram.com/yourusername",
+    "gh_url": "https://github.com/yourusername"
+  }
+}
